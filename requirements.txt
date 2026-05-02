@@ -1,0 +1,5 @@
+google-auth==2.49.2
+gspread==6.2.1
+pandas==3.0.2
+plotly==6.7.0
+streamlit==1.56.0
