@@ -5,6 +5,12 @@ import pandas as pd
 import plotly.express as px
 import json
 
+senha = st.text_input("Senha de Acesso", type="password")
+    if senha != st.secrets["PASSWORD"]:
+        st.error("Acesso negado.")
+        st.stop() 
+    st.success("Bem-vindo!")
+
 ESCOPO = [
     "https://spreadsheets.google.com/feeds",
     "https://www.googleapis.com/auth/drive"
